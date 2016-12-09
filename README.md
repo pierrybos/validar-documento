@@ -1,3 +1,7 @@
+[![Coverage Status](https://coveralls.io/repos/github/pierrybos/validar-documento/badge.svg?branch=master)](https://coveralls.io/github/pierrybos/validar-documento?branch=master)
+[![Build Status](https://travis-ci.org/pierrybos/validar-documento.svg?branch=master)](https://travis-ci.org/pierrybos/validar-documento)
+
+
 Brazilian Document Validator
 =========
 
