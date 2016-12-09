@@ -1,7 +1,7 @@
 ## Synopsis
 
-This code just return if a brazilian document (CPF, CNPJ or PIS) has valid or not based on your verify code.
-For PIS need a extra parameter, a boolean, to informe that verify code has one character.
+This code just checks if a brazilian document (CPF, CNPJ or PIS) is valid or not based on your verify code. 
+For the PIS there is the need of a extra parameter, a boolean, to inform that the verify code has one character.
 
 ## Code Example
 
@@ -34,9 +34,8 @@ PIS:
     verificarDocumento('12345678900', true); // will return true
     verificarDocumento(12345678900, true); // will return true
 
-    // Second parameter boolean identify if verify number has just one digite. Calcule changes.
-
-
+    // Second parameter boolean identifies if verify number has just one digit. Calculate changes.
+    
 ## License
 
 MIT
