@@ -1,6 +1,6 @@
 {
   "name": "verifica-documento",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This code just checks if a brazilian document (CPF, CNPJ or PIS) is valid or not based on your verify code. For the PIS there is the need of a extra parameter, a boolean, to inform that the verify code has one character.",
   "main": "verificar-documento.js",
   "scripts": {
