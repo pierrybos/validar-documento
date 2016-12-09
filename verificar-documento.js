@@ -1,3 +1,4 @@
+'use strict';
 
 /**
  * Método verifica se documento informado é valido, Retorna sucesso para CPF, CNPJ ou PIS
@@ -72,6 +73,8 @@
             return 0;
         } 
 
+        console.log(resto);
+
         return resto;
     };
 
@@ -83,3 +86,6 @@
    return moduloVerificador.verificarDocumento(String(documento).replace(/[^0-9]/g, ''), umDigitoVerificador, umDigitoVerificador);
 
 };
+
+
+module.exports = verificarDocumento;

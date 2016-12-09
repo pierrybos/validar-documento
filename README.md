@@ -1,9 +1,13 @@
+Brazilian Document Validator
+=========
+
 ## Synopsis
 
 This code just checks if a brazilian document (CPF, CNPJ or PIS) is valid or not based on your verify code. 
 For the PIS there is the need of a extra parameter, a boolean, to inform that the verify code has one character.
 
-## Code Example
+## Usage
+
 
 CPF:
 
@@ -27,6 +31,7 @@ CNPJ:
 
 
 PIS:
+
     verificarDocumento('123.4567.890-1', true); // will return false
     verificarDocumento('12345678901', true); // will return false
     verificarDocumento(12345678901, true); // will return false
@@ -35,7 +40,21 @@ PIS:
     verificarDocumento(12345678900, true); // will return true
 
     // Second parameter boolean identifies if verify number has just one digit. Calculate changes.
+
+
+## Installation
+
+  `npm install @pierrybos/verifica-documento`
+
+## Tests
+
+  `npm test`
     
 ## License
 
 MIT
+
+
+## Contributing
+
+In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
