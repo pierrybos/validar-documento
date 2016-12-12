@@ -1,8 +1,18 @@
 'use strict';
 
+var validatorMdl = require('./src/validator-mdl')
 /**
- * You can call directy on node `node index.js 123456789` or `node index.js '123.321.123.96'`
+ * Método verifica se documento informado é valido, Retorna sucesso para CPF, CNPJ ou PIS
+ * @param {String} documento - documento a ser verificado. Pode ser uma string '123.321.456-96' ou o numero 12332145696
+ * @param  {boolean} umDigitoVerificador - informa se documento possui apenas um digito, como o PIS, interfere na forma de cálculo.
+ * @return {boolean}
  */
-var verificador = require('./verificar-documento.js');
-console.log(verificador(process.argv[2]));
-// if(var args = process.argv.slice(2);)
+ function validateDocument(strDocument, numOneNumberInChecker){
+
+
+   return validatorMdl.fnBolValidateDocument(strDocument, numOneNumberInChecker);
+
+};
+
+
+module.exports = validateDocument;
